@@ -46,14 +46,14 @@ dept_count = wages[['Department',"Hourly Rate"]].groupby('Department').count().r
 dept_stats = dept_mean.join([dept_median,dept_count])
 
 top_10_count = dept_stats.sort_values('Number of Employees', ascending=False).head(10)
-num_employees = px.bar(top_10_count,x='Number of Employees',y=top_10_count.index)#,color=top_10_count.index)
-num_employees.update_layout(showlegend=False)
+#num_employees = px.bar(top_10_count,x='Number of Employees',y=top_10_count.index)#,color=top_10_count.index)
+#num_employees.update_layout(showlegend=False)
 
 top_wage_mean = dept_stats.sort_values('Avg Hourly Rate', ascending=False).head(6)
-wage_mean = px.bar(top_wage_mean,x=top_wage_mean.index,y="Avg Hourly Rate")#,color=top_wage_mean.index)
+#wage_mean = px.bar(top_wage_mean,x=top_wage_mean.index,y="Avg Hourly Rate")#,color=top_wage_mean.index)
 
 top_wage_med = dept_stats.sort_values('Median Hourly Rate', ascending=False).head(6)
-wage_med = px.bar(top_wage_mean,x=top_wage_med.index,y="Median Hourly Rate")#,color=top_wage_mean.index)
+#wage_med = px.bar(top_wage_mean,x=top_wage_med.index,y="Median Hourly Rate")#,color=top_wage_mean.index)
 
 
 #st.html('<div class="flourish-embed flourish-hierarchy" data-src="visualisation/28839282"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28839282/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>')
