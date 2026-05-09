@@ -1,5 +1,8 @@
 .ipynb_checkpoints/
 .DS_Store
-virtual_documents/
-.virtual_documents/.
 .virtual_documents/*
+.vscode/
+wages.db
+jittered
+jittered.csv
+City_of_Seattle_Wage_Data_20260402.csv

@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import streamlit.components.v1 as components
 
 st.title("City of Seattle Wage Data")
 st.caption("Data last updated 4/2/2026")
